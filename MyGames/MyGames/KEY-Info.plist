@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BASE_URL</key>
+	<string>https://api.rawg.io/api/games</string>
+	<key>API_KEY</key>
+	<string>9fcb00d35cee4487bc6d93cc24b06016</string>
+</dict>
+</plist>

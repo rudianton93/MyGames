@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Home" customModuleProvider="target">
+            <connections>
+                <outlet property="iconSearch" destination="Gba-MY-iPT" id="z4A-84-r55"/>
+                <outlet property="searchBtn" destination="VZX-V6-6hW" id="Cf4-Gs-pma"/>
+                <outlet property="tableView" destination="FEi-5R-uQG" id="oEy-uD-FKi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FEi-5R-uQG">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZX-V6-6hW">
+                    <rect key="frame" x="16" y="59" width="361" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Ia2-Hb-2Hn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="actionSearch:" destination="-1" eventType="touchUpInside" id="SEl-NA-gPq"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K86-cm-XKV">
+                    <rect key="frame" x="72" y="75.666666666666671" width="55.666666666666657" height="16.666666666666671"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                    <color key="textColor" red="0.60392156860000001" green="0.60392156860000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gba-MY-iPT">
+                    <rect key="frame" x="32" y="72" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="Y5E-fH-z10"/>
+                        <constraint firstAttribute="height" constant="24" id="kUL-Jb-TF9"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="FEi-5R-uQG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2iN-fR-tcN"/>
+                <constraint firstItem="FEi-5R-uQG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="6bM-kX-wa2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FEi-5R-uQG" secondAttribute="trailing" id="FQK-di-Zgd"/>
+                <constraint firstItem="Gba-MY-iPT" firstAttribute="leading" secondItem="VZX-V6-6hW" secondAttribute="leading" constant="16" id="RPV-F0-3YM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FEi-5R-uQG" secondAttribute="bottom" id="Rko-MQ-jeX"/>
+                <constraint firstItem="VZX-V6-6hW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="TZH-0U-3ma"/>
+                <constraint firstItem="VZX-V6-6hW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="WtF-9L-7QE"/>
+                <constraint firstItem="K86-cm-XKV" firstAttribute="leading" secondItem="Gba-MY-iPT" secondAttribute="trailing" constant="16" id="b1K-vP-a8o"/>
+                <constraint firstItem="K86-cm-XKV" firstAttribute="centerY" secondItem="Gba-MY-iPT" secondAttribute="centerY" id="hoT-QC-44Q"/>
+                <constraint firstItem="FEi-5R-uQG" firstAttribute="top" secondItem="VZX-V6-6hW" secondAttribute="bottom" constant="-50" id="llL-K2-4Vx"/>
+                <constraint firstItem="Gba-MY-iPT" firstAttribute="centerY" secondItem="VZX-V6-6hW" secondAttribute="centerY" id="prn-WQ-eda"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VZX-V6-6hW" secondAttribute="trailing" constant="16" id="ugn-vQ-ajH"/>
+            </constraints>
+            <point key="canvasLocation" x="92" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="search.png" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

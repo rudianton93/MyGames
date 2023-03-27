@@ -1,0 +1,65 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+use_frameworks!
+workspace 'Modularization'
+
+target 'MyGames' do
+  # Comment the next line if you don't want to use dynamic frameworks
+
+  pod 'RxAlamofire'
+  pod 'RxCocoa'
+  pod 'Kingfisher', '~> 7.2.0'
+  pod 'SwiftLint', '~> 0.47.0'
+
+  # Pods for MyGames
+
+  target 'MyGamesTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MyGamesUITests' do
+    # Pods for testing
+  end
+
+end
+
+target 'Home' do
+  project '../Module/Home/Home'
+  pod 'RxCocoa'
+  pod 'RxAlamofire'
+end
+
+target 'Core' do
+  project '../Module/Core/Core'
+  
+end
+
+target 'Favorit' do
+  project '../Module/Favorit/Favorit'
+  pod 'RxCocoa'
+  pod 'RxAlamofire'
+  pod 'Kingfisher', '~> 7.2.0'
+end
+
+target 'Detail' do
+  project '../Module/Detail/Detail'
+  pod 'RxCocoa'
+  pod 'RxAlamofire'
+  pod 'Kingfisher', '~> 7.2.0'
+end
+
+target 'Search' do
+  project '../Module/Search/Search'
+  pod 'RxCocoa'
+  pod 'RxAlamofire'
+  pod 'Kingfisher', '~> 7.2.0'
+end
+
+target 'About' do
+  project '../Module/About/About'
+  pod 'RxCocoa'
+  pod 'RxAlamofire'
+  pod 'Kingfisher', '~> 7.2.0'
+end

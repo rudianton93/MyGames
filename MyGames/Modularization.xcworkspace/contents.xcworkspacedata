@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:MyGames.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Module/About/About.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Module/Core/Core.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Module/Detail/Detail.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Module/Favorit/Favorit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Module/Home/Home.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Module/Search/Search.xcodeproj">
+   </FileRef>
+</Workspace>
