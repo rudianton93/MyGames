@@ -1,26 +1,26 @@
 workflows:
   ios-project-debug: # workflow ID
-    name: iOS debug # workflow name
-    environment:
-      xcode: latest
-      cocoapods: default
-      vars:
-          XCODE_PROJECT: "MyGames/MyGames.xcodeproj" # Isikan nama project Anda.
-          XCODE_SCHEME: "MyGames" # Isikan nama scheme project Anda.
-          XCODE_WORKSPACE: "MyGames/Modularization.xcworkspace"
-    scripts:
-      - name: Install dependencies
+      name: iOS debug # workflow name
+      environment:
+        xcode: latest
+        cocoapods: default
+        vars:
+            XCODE_PROJECT: "MyGames/MyGames.xcodeproj" # Isikan nama project Anda.
+            XCODE_SCHEME: "MyGames" # Isikan nama scheme project Anda.
+            XCODE_WORKSPACE: "MyGames/Modularization.xcworkspace"
+      scripts:
+        - name: Install dependencies
           script: |
             cd MyGames
             pod install
-      - name: Build debug app
+        - name: Build debug app
           script: |
             xcodebuild build -workspace "$XCODE_WORKSPACE" \
             -scheme "$XCODE_SCHEME" \
             CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
-    artifacts:
-      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
-    publishing:
-      email:
-        recipients:
-          - anttonms@gmail.com # Isikan email untuk notifikasi status building.
+      artifacts:
+        - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+      publishing:
+        email:
+          recipients:
+            - anttonms@gmail.com
