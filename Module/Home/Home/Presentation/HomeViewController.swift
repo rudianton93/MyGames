@@ -66,7 +66,7 @@ public class HomeViewController: UIViewController {
     tableView.register(UINib.init(nibName: String(describing: GamesTableViewCell.self), bundle: Bundle(identifier: "com.dicoding.academy.Core")), forCellReuseIdentifier: "cell")
     tableView.contentInset = UIEdgeInsets(top: 72, left: 0, bottom: 0, right: 0)
     
-    iconSearch.image = Constants.Image.search
+    iconSearch.image = UIImage(named: "search")
     searchBtn.addShadow()
   }
   
@@ -118,6 +118,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     cell.titleLbl.text = homePresenter.dataGames.value?.results?[indexPath.row].name ?? "-"
     cell.dateLbl.text = "Release Date: \(homePresenter.dataGames.value?.results?[indexPath.row].released ?? "-")"
     cell.rateLbl.text = "Rating: \(homePresenter.dataGames.value?.results?[indexPath.row].rating ?? 0)"
+    cell.favoritBtn.setImage(UIImage(named: "icon-favorite-selected"), for: .normal)
     if let platforms = homePresenter.dataGames.value?.results?[indexPath.row].platforms {
       cell.descLbl.text = "Platforms: \(homePresenter.getPlatforms(data: platforms))"
     }

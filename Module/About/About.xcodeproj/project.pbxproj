@@ -12,23 +12,7 @@
 		F43EBF3029D11EB400C9ED5D /* About.h in Headers */ = {isa = PBXBuildFile; fileRef = F43EBF2D29D11EB400C9ED5D /* About.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F43EBF3929D11F1700C9ED5D /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F43EBF3729D11F1700C9ED5D /* AboutViewController.xib */; };
 		F43EBF3A29D11F1700C9ED5D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43EBF3829D11F1700C9ED5D /* AboutViewController.swift */; };
-		F4AE945129D1624700D6CBB2 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AE945029D1624700D6CBB2 /* Core.framework */; };
-		F4AE945229D1624700D6CBB2 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4AE945029D1624700D6CBB2 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		F4AE945329D1624700D6CBB2 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F4AE945229D1624700D6CBB2 /* Core.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		714A633B3B9F316E86D3D353 /* Pods-About.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-About.release.xcconfig"; path = "../../../MyGames/Pods/Target Support Files/Pods-About/Pods-About.release.xcconfig"; sourceTree = "<group>"; };
@@ -39,8 +23,6 @@
 		F43EBF2E29D11EB400C9ED5D /* About.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = About.docc; sourceTree = "<group>"; };
 		F43EBF3729D11F1700C9ED5D /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		F43EBF3829D11F1700C9ED5D /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		F43EBF3B29D11F3000C9ED5D /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4AE945029D1624700D6CBB2 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +31,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0A685720BE4BD9EF706FAD /* Pods_About.framework in Frameworks */,
-				F4AE945129D1624700D6CBB2 /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +40,6 @@
 		B2490BCDEF84F508D3D88F97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F4AE945029D1624700D6CBB2 /* Core.framework */,
-				F43EBF3B29D11F3000C9ED5D /* Common.framework */,
 				A3E7579A08A0C38EE5689E5A /* Pods_About.framework */,
 			);
 			name = Frameworks;
@@ -136,7 +115,6 @@
 				F43EBF2629D11EB400C9ED5D /* Sources */,
 				F43EBF2729D11EB400C9ED5D /* Frameworks */,
 				F43EBF2829D11EB400C9ED5D /* Resources */,
-				F4AE945329D1624700D6CBB2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

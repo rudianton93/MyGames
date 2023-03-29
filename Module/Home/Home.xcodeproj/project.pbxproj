@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3C57C6A303460AEC49BEBCD3 /* Pods_Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E2374427298F2F6785FDD4 /* Pods_Home.framework */; };
-		F43EBF5029D144EA00C9ED5D /* Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43EBF4F29D144EA00C9ED5D /* Search.framework */; };
-		F43EBF5129D144EA00C9ED5D /* Search.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F43EBF4F29D144EA00C9ED5D /* Search.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F410EC1C29D3EF1A00153DFE /* Favorit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F410EC1B29D3EF1900153DFE /* Favorit.framework */; };
+		F410EC1D29D3EF1A00153DFE /* Favorit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F410EC1B29D3EF1900153DFE /* Favorit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F410EC1F29D3EF2E00153DFE /* Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F410EC1E29D3EF2E00153DFE /* Search.framework */; };
+		F410EC2029D3EF2E00153DFE /* Search.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F410EC1E29D3EF2E00153DFE /* Search.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F47A237229CBDC6100779E63 /* Home.docc in Sources */ = {isa = PBXBuildFile; fileRef = F47A237129CBDC6100779E63 /* Home.docc */; };
 		F47A237329CBDC6100779E63 /* Home.h in Headers */ = {isa = PBXBuildFile; fileRef = F47A237029CBDC6000779E63 /* Home.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F47A239429CBE15200779E63 /* HomePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47A238429CBE15200779E63 /* HomePresenterProtocol.swift */; };
@@ -22,13 +24,9 @@
 		F47A239D29CBE15200779E63 /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47A238F29CBE15200779E63 /* HomeDataSource.swift */; };
 		F47A239F29CBE15200779E63 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47A239229CBE15200779E63 /* HomeInteractor.swift */; };
 		F47A23A029CBE15200779E63 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47A239329CBE15200779E63 /* HomeUseCase.swift */; };
-		F47A244729CBF17B00779E63 /* Favorit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47A244429CBF17B00779E63 /* Favorit.framework */; };
-		F47A244829CBF17B00779E63 /* Favorit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F47A244429CBF17B00779E63 /* Favorit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F47A246A29CD42B100779E63 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47A246929CD42B100779E63 /* Injection.swift */; };
 		F47A24B929CD518600779E63 /* Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47A24B829CD518600779E63 /* Detail.framework */; };
 		F47A24BA29CD518600779E63 /* Detail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F47A24B829CD518600779E63 /* Detail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F4AE944429D1623200D6CBB2 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AE944329D1623200D6CBB2 /* Core.framework */; };
-		F4AE944529D1623200D6CBB2 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4AE944329D1623200D6CBB2 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,10 +36,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F47A244829CBF17B00779E63 /* Favorit.framework in Embed Frameworks */,
-				F43EBF5129D144EA00C9ED5D /* Search.framework in Embed Frameworks */,
+				F410EC1D29D3EF1A00153DFE /* Favorit.framework in Embed Frameworks */,
+				F410EC2029D3EF2E00153DFE /* Search.framework in Embed Frameworks */,
 				F47A24BA29CD518600779E63 /* Detail.framework in Embed Frameworks */,
-				F4AE944529D1623200D6CBB2 /* Core.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,8 +49,8 @@
 		147A1743E8CD101F8FB76E85 /* Pods-Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home.debug.xcconfig"; path = "../../../MyGames/Pods/Target Support Files/Pods-Home/Pods-Home.debug.xcconfig"; sourceTree = "<group>"; };
 		C6E2374427298F2F6785FDD4 /* Pods_Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66196C17DF646A8602162D6 /* Pods-Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home.release.xcconfig"; path = "../../../MyGames/Pods/Target Support Files/Pods-Home/Pods-Home.release.xcconfig"; sourceTree = "<group>"; };
-		F43EBF4629D130F300C9ED5D /* Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F43EBF4F29D144EA00C9ED5D /* Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F410EC1B29D3EF1900153DFE /* Favorit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Favorit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F410EC1E29D3EF2E00153DFE /* Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47A236D29CBDC6000779E63 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47A237029CBDC6000779E63 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
 		F47A237129CBDC6100779E63 /* Home.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Home.docc; sourceTree = "<group>"; };
@@ -67,14 +64,8 @@
 		F47A238F29CBE15200779E63 /* HomeDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
 		F47A239229CBE15200779E63 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		F47A239329CBE15200779E63 /* HomeUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
-		F47A23D629CBE4BF00779E63 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F47A23F029CBE7E700779E63 /* Favorit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Favorit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F47A243C29CBEF2C00779E63 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F47A244329CBF17B00779E63 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F47A244429CBF17B00779E63 /* Favorit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Favorit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47A246929CD42B100779E63 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 		F47A24B829CD518600779E63 /* Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4AE944329D1623200D6CBB2 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +74,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C57C6A303460AEC49BEBCD3 /* Pods_Home.framework in Frameworks */,
-				F47A244729CBF17B00779E63 /* Favorit.framework in Frameworks */,
 				F47A24B929CD518600779E63 /* Detail.framework in Frameworks */,
-				F4AE944429D1623200D6CBB2 /* Core.framework in Frameworks */,
-				F43EBF5029D144EA00C9ED5D /* Search.framework in Frameworks */,
+				F410EC1F29D3EF2E00153DFE /* Search.framework in Frameworks */,
+				F410EC1C29D3EF1A00153DFE /* Favorit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,15 +96,9 @@
 		B8A21EBBC2B258DA3B9D748F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F4AE944329D1623200D6CBB2 /* Core.framework */,
-				F43EBF4F29D144EA00C9ED5D /* Search.framework */,
-				F43EBF4629D130F300C9ED5D /* Search.framework */,
+				F410EC1E29D3EF2E00153DFE /* Search.framework */,
+				F410EC1B29D3EF1900153DFE /* Favorit.framework */,
 				F47A24B829CD518600779E63 /* Detail.framework */,
-				F47A244329CBF17B00779E63 /* Common.framework */,
-				F47A244429CBF17B00779E63 /* Favorit.framework */,
-				F47A243C29CBEF2C00779E63 /* Common.framework */,
-				F47A23F029CBE7E700779E63 /* Favorit.framework */,
-				F47A23D629CBE4BF00779E63 /* Common.framework */,
 				C6E2374427298F2F6785FDD4 /* Pods_Home.framework */,
 			);
 			name = Frameworks;

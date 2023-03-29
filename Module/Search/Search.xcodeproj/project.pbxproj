@@ -18,8 +18,6 @@
 		F43EBF1F29D11CAB00C9ED5D /* Detail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F43EBF1D29D11CAB00C9ED5D /* Detail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F47A24AE29CD4FD400779E63 /* Search.docc in Sources */ = {isa = PBXBuildFile; fileRef = F47A24AD29CD4FD400779E63 /* Search.docc */; };
 		F47A24AF29CD4FD400779E63 /* Search.h in Headers */ = {isa = PBXBuildFile; fileRef = F47A24AC29CD4FD400779E63 /* Search.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F4AE944E29D1624300D6CBB2 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AE944D29D1624300D6CBB2 /* Core.framework */; };
-		F4AE944F29D1624300D6CBB2 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4AE944D29D1624300D6CBB2 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +28,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F43EBF1929D11B8C00C9ED5D /* Favorit.framework in Embed Frameworks */,
-				F4AE944F29D1624300D6CBB2 /* Core.framework in Embed Frameworks */,
 				F43EBF1F29D11CAB00C9ED5D /* Detail.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -46,15 +43,11 @@
 		F43EBF0B29D11B5800C9ED5D /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		F43EBF0D29D11B5800C9ED5D /* ListSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSearchTableViewCell.swift; sourceTree = "<group>"; };
 		F43EBF0E29D11B5800C9ED5D /* ListSearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListSearchTableViewCell.xib; sourceTree = "<group>"; };
-		F43EBF1329D11B8800C9ED5D /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43EBF1729D11B8C00C9ED5D /* Favorit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Favorit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F43EBF1A29D11BC600C9ED5D /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43EBF1D29D11CAB00C9ED5D /* Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F43EBF4C29D1420300C9ED5D /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47A24A929CD4FD400779E63 /* Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47A24AC29CD4FD400779E63 /* Search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Search.h; sourceTree = "<group>"; };
 		F47A24AD29CD4FD400779E63 /* Search.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Search.docc; sourceTree = "<group>"; };
-		F4AE944D29D1624300D6CBB2 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +58,6 @@
 				ED7A82D42AB30180C2D878DF /* Pods_Search.framework in Frameworks */,
 				F43EBF1E29D11CAB00C9ED5D /* Detail.framework in Frameworks */,
 				F43EBF1829D11B8C00C9ED5D /* Favorit.framework in Frameworks */,
-				F4AE944E29D1624300D6CBB2 /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +67,8 @@
 		08BC83E9FF3E9EE60B3ADCE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F4AE944D29D1624300D6CBB2 /* Core.framework */,
-				F43EBF4C29D1420300C9ED5D /* Home.framework */,
 				F43EBF1D29D11CAB00C9ED5D /* Detail.framework */,
-				F43EBF1A29D11BC600C9ED5D /* Common.framework */,
 				F43EBF1729D11B8C00C9ED5D /* Favorit.framework */,
-				F43EBF1329D11B8800C9ED5D /* Home.framework */,
 				99C06B17B3C14EF656296C58 /* Pods_Search.framework */,
 			);
 			name = Frameworks;

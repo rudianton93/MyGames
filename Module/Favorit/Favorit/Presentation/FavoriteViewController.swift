@@ -122,6 +122,7 @@ extension FavoriteViewController: UITableViewDelegate, UITableViewDataSource {
       cell.dateLbl.text = "Release Date: \(favoritPresenter.dataFavorit.value?[indexPath.row].released ?? "-")"
       cell.rateLbl.text = "Rating: \(favoritPresenter.dataFavorit.value?[indexPath.row].rating ?? 0)"
       cell.descLbl.text = "Platforms: \(favoritPresenter.dataFavorit.value?[indexPath.row].platforms ?? "")"
+      cell.favoritBtn.setImage(UIImage(named: "icon-favorite-selected"), for: .normal)
       
       cell.favoritTapped = {
         self.deleteFavorit(index: indexPath.row)

@@ -26,8 +26,6 @@
 		F47A248E29CD437600779E63 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47A248D29CD437600779E63 /* Injection.swift */; };
 		F47A249529CD46E200779E63 /* Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47A249429CD46E200779E63 /* Detail.framework */; };
 		F47A249629CD46E200779E63 /* Detail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F47A249429CD46E200779E63 /* Detail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F4AE944729D1623800D6CBB2 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AE944629D1623800D6CBB2 /* Core.framework */; };
-		F4AE944829D1623800D6CBB2 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4AE944629D1623800D6CBB2 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,7 +36,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F47A249629CD46E200779E63 /* Detail.framework in Embed Frameworks */,
-				F4AE944829D1623800D6CBB2 /* Core.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,12 +62,8 @@
 		F47A240129CBE83700779E63 /* FavoritEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritEntity.swift; sourceTree = "<group>"; };
 		F47A240229CBE83700779E63 /* FavoritUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritUseCase.swift; sourceTree = "<group>"; };
 		F47A240329CBE83700779E63 /* FavoritInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritInteractor.swift; sourceTree = "<group>"; };
-		F47A241129CBE8EE00779E63 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F47A244A29CBF1AE00779E63 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F47A245829CBF4B400779E63 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47A248D29CD437600779E63 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Injection.swift; path = Favorit/Injection.swift; sourceTree = SOURCE_ROOT; };
 		F47A249429CD46E200779E63 /* Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4AE944629D1623800D6CBB2 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +72,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				56EF02577756881D2C6DFCDD /* Pods_Favorit.framework in Frameworks */,
-				F4AE944729D1623800D6CBB2 /* Core.framework in Frameworks */,
 				F47A249529CD46E200779E63 /* Detail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,11 +82,7 @@
 		4C1BBF9853CAB34192058EEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F4AE944629D1623800D6CBB2 /* Core.framework */,
 				F47A249429CD46E200779E63 /* Detail.framework */,
-				F47A245829CBF4B400779E63 /* Common.framework */,
-				F47A244A29CBF1AE00779E63 /* Home.framework */,
-				F47A241129CBE8EE00779E63 /* Home.framework */,
 				1FF2BAA368754D8762C32322 /* Pods_Favorit.framework */,
 			);
 			name = Frameworks;
