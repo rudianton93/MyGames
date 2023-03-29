@@ -37,6 +37,7 @@ target 'Favorit' do
   pod 'RxCocoa'
   pod 'RxAlamofire'
   pod 'Kingfisher', '~> 7.2.0'
+  pod 'Core', :git => 'https://github.com/rudianton93/Modularization-CorePodSpecs-Module.git'
 end
 
 target 'Detail' do
