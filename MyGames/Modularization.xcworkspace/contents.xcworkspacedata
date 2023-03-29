@@ -11,9 +11,6 @@
       location = "group:../Module/About/About.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../Module/Core/Core.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:../Module/Detail/Detail.xcodeproj">
    </FileRef>
    <FileRef

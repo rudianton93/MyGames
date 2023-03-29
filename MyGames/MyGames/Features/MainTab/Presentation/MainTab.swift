@@ -9,7 +9,6 @@ import UIKit
 import SwiftUI
 import Home
 import Favorit
-import Core
 import About
 
 class MainTab: UITabBarController {
@@ -45,9 +44,9 @@ class MainTab: UITabBarController {
     let homePresenter = HomePresenter(useCase: homeUsecase)
     let favoritPresenter = FavoritPresenter(useCase: favoritUsecase)
     
-    let home = createTabController(vc: HomeViewController(homePresenter: homePresenter, favoritPresenter: favoritPresenter), title: "Home", active: Constants.TabbarImage.homeActive, inactive: Constants.TabbarImage.homeInactive)
-    let favorite = createTabController(vc: FavoriteViewController(favoritPresenter: favoritPresenter), title: "Favorite", active: Constants.TabbarImage.favoriteActive, inactive: Constants.TabbarImage.favoriteInactive)
-    let about = createTabController(vc: AboutViewController(), title: "About", active: Constants.TabbarImage.userActive, inactive: Constants.TabbarImage.userInactive)
+    let home = createTabController(vc: HomeViewController(homePresenter: homePresenter, favoritPresenter: favoritPresenter), title: "Home", active: UIImage(named: "home-active"), inactive: UIImage(named: "home-inactive"))
+    let favorite = createTabController(vc: FavoriteViewController(favoritPresenter: favoritPresenter), title: "Favorite", active: UIImage(named: "favorite-active"), inactive: UIImage(named: "favorite-inactive"))
+    let about = createTabController(vc: AboutViewController(), title: "About", active: UIImage(named: "user-active"), inactive: UIImage(named: "user-inactive"))
     viewControllers = [home, favorite, about]
     self.delegate = self
   }
@@ -61,10 +60,17 @@ extension UITabBarController {
     tabController.tabBarItem.selectedImage = active?.withRenderingMode(.alwaysOriginal)
     tabController.tabBarItem.title = title
     tabController.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -4.0)
-    tabController.tabBarItem.setTitleTextAttributes([.foregroundColor: Constants.Color.tabNormal, NSAttributedString.Key.font: UIFont.regularApplicationFont(withSize: 12)], for: .normal)
-    tabController.tabBarItem.setTitleTextAttributes([.foregroundColor: Constants.Color.tabSelected, NSAttributedString.Key.font: UIFont.regularApplicationFont(withSize: 12)], for: .selected)
+    tabController.tabBarItem.setTitleTextAttributes([.foregroundColor: UIColor(red: 0 / 255.0, green: 59.0 / 255.0, blue: 70.0 / 255.0, alpha: 1.0), NSAttributedString.Key.font: regularApplicationFont(withSize: 12)], for: .normal)
+    tabController.tabBarItem.setTitleTextAttributes([.foregroundColor: UIColor(red: 102 / 255.0, green: 165 / 255.0, blue: 173 / 255.0, alpha: 1.0), NSAttributedString.Key.font: regularApplicationFont(withSize: 12)], for: .selected)
     
     return tabController
+  }
+  
+  func regularApplicationFont(withSize size: CGFloat) -> UIFont {
+    guard let font = UIFont(name: "Inter-Regular", size: size) else {
+      return UIFont.systemFont(ofSize: size)
+    }
+    return font
   }
 }
 

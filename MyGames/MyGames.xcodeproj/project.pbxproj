@@ -32,8 +32,6 @@
 		F47A243729CBEEA400779E63 /* Favorit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F47A243529CBEEA400779E63 /* Favorit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F47A24B629CD507D00779E63 /* Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47A24B529CD507D00779E63 /* Search.framework */; };
 		F47A24B729CD507D00779E63 /* Search.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F47A24B529CD507D00779E63 /* Search.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F4AE944129D1622C00D6CBB2 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AE944029D1622C00D6CBB2 /* Core.framework */; };
-		F4AE944229D1622C00D6CBB2 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4AE944029D1622C00D6CBB2 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +61,6 @@
 				F47A23A329CBE16300779E63 /* Home.framework in Embed Frameworks */,
 				F47A24B729CD507D00779E63 /* Search.framework in Embed Frameworks */,
 				F43EBF4129D120CA00C9ED5D /* About.framework in Embed Frameworks */,
-				F4AE944229D1622C00D6CBB2 /* Core.framework in Embed Frameworks */,
 				F47A243729CBEEA400779E63 /* Favorit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -101,10 +98,8 @@
 		F430C2F229B9351C004CB6CC /* MyGamesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGamesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F43EBF3F29D120CA00C9ED5D /* About.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = About.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47A23A129CBE16300779E63 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F47A23BB29CBE45600779E63 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47A243529CBEEA400779E63 /* Favorit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Favorit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47A24B529CD507D00779E63 /* Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4AE944029D1622C00D6CBB2 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +108,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F47A243629CBEEA400779E63 /* Favorit.framework in Frameworks */,
-				F4AE944129D1622C00D6CBB2 /* Core.framework in Frameworks */,
 				7CC223A93343913193ECF07D /* Pods_MyGames.framework in Frameworks */,
 				F47A23A229CBE16300779E63 /* Home.framework in Frameworks */,
 				F43EBF4029D120CA00C9ED5D /* About.framework in Frameworks */,
@@ -156,11 +150,9 @@
 		99ECA201DCF8FAAD0FBBD07C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F4AE944029D1622C00D6CBB2 /* Core.framework */,
 				F43EBF3F29D120CA00C9ED5D /* About.framework */,
 				F47A24B529CD507D00779E63 /* Search.framework */,
 				F47A243529CBEEA400779E63 /* Favorit.framework */,
-				F47A23BB29CBE45600779E63 /* Common.framework */,
 				F47A23A129CBE16300779E63 /* Home.framework */,
 				59EA278EA9F97BD734A6C398 /* Pods_MyGames.framework */,
 				CEA272BE2AF310F559ABB3AE /* Pods_MyGames_MyGamesUITests.framework */,
@@ -386,6 +378,8 @@
 				Base,
 			);
 			mainGroup = F430C2C029B9351A004CB6CC;
+			packageReferences = (
+			);
 			productRefGroup = F430C2CA29B9351B004CB6CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

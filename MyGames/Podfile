@@ -29,11 +29,7 @@ target 'Home' do
   project '../Module/Home/Home'
   pod 'RxCocoa'
   pod 'RxAlamofire'
-end
-
-target 'Core' do
-  project '../Module/Core/Core'
-  
+  pod 'Core', :git => 'https://github.com/rudianton93/Modularization-CorePodSpecs-Module.git'
 end
 
 target 'Favorit' do
@@ -48,6 +44,7 @@ target 'Detail' do
   pod 'RxCocoa'
   pod 'RxAlamofire'
   pod 'Kingfisher', '~> 7.2.0'
+  pod 'Core', :git => 'https://github.com/rudianton93/Modularization-CorePodSpecs-Module.git'
 end
 
 target 'Search' do
@@ -55,6 +52,7 @@ target 'Search' do
   pod 'RxCocoa'
   pod 'RxAlamofire'
   pod 'Kingfisher', '~> 7.2.0'
+  pod 'Core', :git => 'https://github.com/rudianton93/Modularization-CorePodSpecs-Module.git'
 end
 
 target 'About' do
@@ -62,4 +60,5 @@ target 'About' do
   pod 'RxCocoa'
   pod 'RxAlamofire'
   pod 'Kingfisher', '~> 7.2.0'
+  pod 'Core', :git => 'https://github.com/rudianton93/Modularization-CorePodSpecs-Module.git'
 end
